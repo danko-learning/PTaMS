@@ -41,7 +41,7 @@
 
 Рассмотрим постановку задачи математической статистики: по результатам
 наблюдения за некоторой случайной величиной $\xi$ требуется сделать
-выводы о неизвстном законе распределения этой величины $\mathcal{L}(x,\varTheta)$
+выводы о неизвстном законе распределения этой величины $\mathcal{L}(x,\theta)$
 либо о неизвестных парамерах $\varTheta_1, \dots, \varTheta_n$ известного распределения.
 \bigskip
 
@@ -52,8 +52,8 @@ $F_{\xi}(x) = P\{\xi < x\}, \;\;\; x \in R.$
 \textbf{Определение:}
 \smallskip
 
-Совокупность $n$ независимых одинаково распределённых случайных величин $\mathbf{X}_1,
-\mathbf{X}_2, \dots, \mathbf{X}_n$ называется выборкой (выборочной совокупностью),
+Совокупность $n$ независимых одинаково распределённых случайных величин $X_1,
+X_2, \dots, X_n$ называется выборкой (выборочной совокупностью),
 извлечённой из распределения случайной величины $\xi$.
 \bigskip
 
@@ -167,7 +167,7 @@ $i$"=того интервала для интервального ряда.
 
 Выборочной дисперсией (смещённой) называется величина:
 
-$$S^2 = \frac{1}{n} \sum^n_{i = 1} (\mathbf{X}_i - \overline{x})^2.$$
+$$S^2 = \frac{1}{n} \sum^n_{i = 1} (X_i - \overline{x})^2.$$
 
 Она характеризует среднее из квадратов отклонений наблюдаемой величины от выборочного
 среднего. Величина $S = \sqrt{S^2}$ называется выборочным средним квадратическим
@@ -194,7 +194,7 @@ $i$"=той группе или $i$"=тому интервалу, $x_i$~--- варианта для точечного ряда и
 
 Выборочной дисперсией (несмещённой) называется величина:
 
-$$\overline{\sigma} = \frac{1}{n - 1} \sum^n_{i = 1} (\mathbf{X}_i \overline{x})^2.$$
+$$\overline{\sigma} = \frac{1}{n - 1} \sum^n_{i = 1} (X_i \overline{x})^2.$$
 
 Аналогично, величина $\overline{\sigma} = \sqrt{\overline{\sigma}^2}$ называется
 выборочным несмещённым средним квадратическим отклонением.
@@ -211,18 +211,18 @@ $$\overline{\sigma}^2 = \frac{n}{n - 1} S^2.$$
 
 Эмперической функцией распределения (ЭФР) называется функция
 
-$$\tilde{F}_n(x) = \frac{1}{n} \sum^n_{i = 1} e (x - \mathbf{X}_i),$$
+$$\tilde{F}_n(x) = \frac{1}{n} \sum^n_{i = 1} e (x - X_i),$$
 
 где $e(x) = 1$, при $x > 0 \;\;\; e(x) = 0$, при $x \leq 0$.
 \smallskip
 
-Таким образом, если $\mathbf{X}_i$, то $e(x) = 1$, если $\mathbf{X}_i \geq x$,
-то $e(x) = 0$, а сумма $e(x - \mathbf{X}_i)$ будет равна количеству элементов выборки,
+Таким образом, если $X_i$, то $e(x) = 1$, если $X_i \geq x$,
+то $e(x) = 0$, а сумма $e(x - X_i)$ будет равна количеству элементов выборки,
 которые приняли значение, строго меньше некоторого $x \in R$.
 \smallskip
 
-Пусть $x_1, x_2, \dots, x_n$~--- реализация выборки $\mathbf{X}_1, \mathbf{X}_2,
-\dots, \mathbf{X}_n$, т.е. наблюдавшиеся значения случайной величины $\xi$.
+Пусть $x_1, x_2, \dots, x_n$~--- реализация выборки $X_1, X_2,
+\dots, X_n$, т.е. наблюдавшиеся значения случайной величины $\xi$.
 \smallskip
 
 Обозначим $\mu(x)$~--- число элементов выборки, строго меньших $x \in R$.
@@ -248,10 +248,10 @@ $$\tilde{F}_n(x) = \frac{\mu(x)}{n}.$$
 \textbf{Определение:}
 \smallskip
 
-Пусть $g(t_1, \dots, t_n)$~--- непрерывная функция. Оценкой $\varTheta$ назовём
-$\tilde{\varTheta} = g (\mathbf{X}_1, \dots, \mathbf{X}_2)$.
+Пусть $g(t_1, \dots, t_n)$~--- непрерывная функция. Оценкой $\theta$ назовём
+$\tilde{\theta} = g (X_1, \dots, X_2)$.
 
-Если $g(\mathbf{X}_1, \dots, \mathbf{X}_n) = T$ некоторая функция, то
+Если $g(X_1, \dots, X_n) = T$ некоторая функция, то
 $T$~--- статистика.
 \bigskip
 
@@ -266,40 +266,40 @@ $T$~--- статистика.
 
 \textbf{Определение:}
 
-Оценка $\tilde{\varTheta}_n$ называется несмещённой оценкой параметра $\varTheta$,
-если $M(\tilde{\varTheta}_n) = \varTheta$.
+Оценка $\tilde{\theta}_n$ называется несмещённой оценкой параметра $\theta$,
+если $M(\tilde{\theta}_n) = \theta$.
 \bigskip
 
 \textbf{Определение:}
 \smallskip
 
-Оценка $\tilde{\varTheta}_n$ называется состоятельной оценкой параметра $\varTheta$,
-если $\tilde{\varTheta}_n$ сходится по вероятности к $\varTheta$.
+Оценка $\tilde{\theta}_n$ называется состоятельной оценкой параметра $\theta$,
+если $\tilde{\theta}_n$ сходится по вероятности к $\theta$.
 \bigskip
 
 \textbf{Определение:}
 \smallskip
 
-Оценка $\tilde{\varTheta}_n$ называется эффективной, или оптимальной, или наилучшей
-несмещённой оценкой с минимальной дисперсией (НОМД), если $M(\tilde{\varTheta}_n) =
-\varTheta$ и $D(\tilde{\varTheta}_n) = \displaystyle\inf_{\tilde{\varTheta}^{*}_n} D \tilde{\varTheta}^{*}_n$.
+Оценка $\tilde{\theta}_n$ называется эффективной, или оптимальной, или наилучшей
+несмещённой оценкой с минимальной дисперсией (НОМД), если $M(\tilde{\theta}_n) =
+\theta$ и $D(\tilde{\theta}_n) = \displaystyle\inf_{\tilde{\theta}^{*}_n} D \tilde{\theta}^{*}_n$.
 \bigskip
 
 \subsection{Теорема о несмещённой состоятельной оценке мат. ожидания}
 
-Пусть $\xi \sim L(x, \varTheta)$, $L(x, \varTheta)$~--- закон распределения известен
+Пусть $\xi \sim L(x, \theta)$, $L(x, \theta)$~--- закон распределения известен
 с точностью до параметра.
 
-$$\overline{\varTheta} = (\varTheta_1, \dots, \varTheta_n)$$
+$$\overline{\theta} = (\varTheta_1, \dots, \varTheta_n)$$
 
-По результатам $\mathbf{X}_1, \dots, \mathbf{X}_n$ наблюдений за $\xi$ требуется
-построить оценку $\varTheta$.
+По результатам $X_1, \dots, X_n$ наблюдений за $\xi$ требуется
+построить оценку $\theta$.
 \bigskip
 
 \textbf{Теорема:}
 \smallskip
 
-Пусть $\mathbf{X}_1, \dots, \mathbf{X}_n \sim L_{\xi} (x, \varTheta)$, где
+Пусть $X_1, \dots, X_n \sim L_{\xi} (x, \theta)$, где
 $\xi$~--- случайная величина с $M\xi = a < +\infty \;\;\; D\xi = \sigma^2$.
 Тогда выборочное среднее $\overline{x} = \frac{1}{n} \sum^n_{i = 1} x_i$
 является несмещённой и состоятельной оценкой $M\xi$.
@@ -332,8 +332,175 @@ $$= 1 - \frac{1}{n^2}{\epsilon^2} D\xi = 1 - \frac{n \sigma^2}{n^2 \epsilon^2} =
 Т.к. $P(A) \leq 1 \;\;\; \forall A$, то $\lim_{n \to \infty} P\{|\overline{x} - a| <
 \epsilon\} = 1 \Rightarrow \overline{x}$~--- состоятельная.
 
-\subsection{}
+\subsection{Дополнительная информация}
 
+\textbf{Определение:}
+\smallskip
 
+Выборочной дисперсией (смещённой) называется величина $S^2 = \frac{1}{n} \sum^n_{i = 1}
+(x_i - \overline{x})^2$.
+
+Для группированных данных: $S^2 = \frac{1}{n} \sum^m_{i = 1}
+(x_i - \overline{x})^2 * n_i$.
+\bigskip
+
+\textbf{Определение:}
+\smallskip
+
+Выборочной дисперсией (несмещённой) называется оценка $\tilde{\sigma}^2 = \frac{1}{n - 1}
+\sum^n_{i = 1} (x_i - \overline{x})^2$.
+
+Для группированных данных: $\tilde{\sigma}^2 = \frac{n}{n - 1} * S^2$.
+\bigskip
+
+\subsection{Теорема о несмещённой и состоятельной оценке дисперсии}
+
+\textbf{Теорема:}
+\smallskip
+
+Пусть $X_1, \dots, X_n \sim L(x, \theta)$, где $M\xi = a < +\infty$,
+$D\xi = \sigma^2$. Тогда несмещённой и состоятельной оценкой $D\xi$ является величина
+$\tilde{\sigma}^2 = \frac{1}{n - 1} \sum^n_{i = 1} (x_i - \overline{x})^2$.
+\bigskip
+
+Доказательство:
+\begin{center}
+    \includegraphics[width=160mm]{2_3_1.png}
+\end{center}
+
+\subsection{Теорема о несмещённой и состоятельной оценке функции распределения}
+
+\textbf{Определение:}
+\begin{center}
+    \includegraphics[width=170mm]{2_3_2.png}
+\end{center}
+
+\textbf{Теорема:}
+\smallskip
+
+Пусть $X_1, \dots, X_n \sim L_{\xi}(x, \theta)$, где
+$F_{\xi}(x)$~--- функция распределения случайной величины $\xi$. Тогда
+эмперическая функция распределения $\tilde{F_n}(x)$ является несмещённой и состоятельной
+оценкой функции распределения $F_\xi(x)$.
+\bigskip
+
+Доказательство:
+\begin{center}
+    \includegraphics[width=170mm]{2_3_3.png}
+\end{center}
+
+\subsection{Теорема об эффективной оценке математического ожидания}
+
+\textbf{Определение:}
+\smallskip
+
+Пусть $\tilde{\theta}_n$~--- несмещённая оценка. $\tilde{\theta}_n$~--- называется
+эффективной оценкой, если
+
+$$D\tilde{\theta}_n =
+\displaystyle\inf_{\tilde{\theta}^{*}_n} D\tilde{\theta}^{*}_n$$
+
+\textbf{Теорема:}
+\smallskip
+
+Пусть $X_1, \dots, X_n \sim L_{\xi}(x, \theta)$, где $\xi$~---
+случайная величина с $M\xi = a < + \infty$. Тогда выборочное среднее
+$\overline{x} = \frac{1}{n} \sum^n_{i = 1} X_i$ является эффективной
+оценкой $M\xi$ в классе линейных несмещённых оценок.
+\bigskip
+
+Доказательство:
+\begin{center}
+    \includegraphics[width=170mm]{2_3_4.png}
+\end{center}
+
+\subsection{Теорема о единственности эффективной оценки}
+
+\textbf{теорема:}
+\smallskip
+
+Пусть $X_1, \dots, X_n \sim L_{\xi}(x, \theta)$, где $\theta$~---
+параметр распределения, и пусть $\tilde{\theta}(\overline{X}_n)$ и
+$\widehat{\theta}_n(\overline{X}_n)$~--- две эффективные оценки $\theta$. Тогда
+$\tilde{\theta}_n(\overline{X}_n) = \widehat{\theta}_n(\overline{X}_n)$.
+То есть $P\{(x_1, \dots, x_n) : \tilde{\theta}_n(\overline{X}_n) \neq
+\widehat{\theta}_n(\overline{X}_n)\} = 0.$
+\bigskip
+
+Доказательство:
+\begin{center}
+    \includegraphics[width=170mm]{2_3_5.png}
+\end{center}
+
+\subsubsection{Определение регулярной параметрической модели. Информация Фишера.}
+
+\textbf{Определение:}
+\smallskip
+
+Пусть $\xi$~--- наблюдаемая случайная величина.
+
+Выборочным пространством $\mathbf{X}_n$
+называется $\{\overline{X}_n = (X_1, \dots, X_n)\}$.
+
+Параметрическим множеством называется $\varTheta$~--- множество значений параметра
+$\theta$.
+\bigskip
+
+\textbf{Определение:}
+\smallskip
+
+Параметрической моделью называется
+
+$$\left\{\mathbf{X}_n; F_{\xi}(x, \theta) : \theta \in \varTheta\right\}$$
+\bigskip
+
+\textbf{Определение:}
+\smallskip
+
+Параметрическая модель называется регулярной, если:
+\begin{enumerate}
+    \item параметрическое множество $\varTheta$~--- открытое множество;
+    \item {носитель распределён, то есть множество $A = \{x : f(x) > 0\}$~---
+    не зависит от параметров;}
+    \item {$\forall \theta \;\; \text{и} \;\; x \in A$ существует производная
+    $\frac{\partial f(x, \theta)}{\partial \theta} < +\infty$;}
+    \item {$\forall \theta \in \varTheta \;\;\; M\left(\frac{\partial \ln f(x, \theta)}{\partial \theta}\right)
+    = 0 \;\;\; M\left(\frac{\partial \ln f(x, \theta)}{\partial \theta}\right)^2 < +\infty$;}
+    \item {Дважды допустимо дифференцирование под знаком интеграла по парамету.}
+\end{enumerate}
+
+\textbf{Определение:}
+\smallskip
+
+Пусть $\xi$~--- случайная величина с функцией плотности $f(x,\theta)$. Тогда
+информацией Фишера для случайного вектора $\overline{X}_n$ называется
+$I_n(\theta) = M(\frac{\partial}{\partial \theta} \ln f (x, \theta))^2$
+\bigskip
+
+\subsection{Неравенство Рао-Крамера. Построение эффективной по Рао-Крамеру
+оценки для пуассоновского распределения}
+
+\textbf{Неравенство Рао"=Крамера:}
+\smallskip
+
+Пусть дана регулярная параметрическая модель. Тогда для любой несмещённой оценки
+$\tilde{\theta}$ параметра $\theta$ $D\tilde{\theta} \geq \frac{1}{n I_n (\theta)}$.
+\bigskip
+
+\textbf{Определение:}
+\smallskip
+
+Величину $e(\theta) = \frac{1}{n I(\theta) * D \tilde{\theta}}$ называют показаелем
+эффективности по Рао"=Крамеру.
+
+Для любой несмещённой оценки $0 < e(\theta) \leq 1$. Если $e(\theta) = 1$, то
+$\tilde{\theta}_n$ называется эффективной по Рао"=Крамеру, следовательно, просто эффективна.
+\bigskip
+
+\textbf{Построение эффективной по Рао-Крамеру
+оценки для пуассоновского распределения:}
+\begin{center}
+    \includegraphics[width=170mm]{2_3_6.png}
+\end{center}
 
 \end{document}
