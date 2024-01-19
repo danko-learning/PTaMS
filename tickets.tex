@@ -169,10 +169,13 @@ $M|\xi_i| = M|\xi_1| < + \infty \;\;\; \forall i$. Тогда $\{\xi_i\}$ удовлетворя
 \smallskip
 
 Пусть $\{\xi_i\}$~--- последовательность независимых одинаково распределённых
-случайных величин с $M|\xi_i| < + \infty$, $M\xi_1 = a; \;\;\; D\xi_1 = \sigma^2$.
+случайных величин с $M|\xi_i| < + \infty$.
+
+$M\xi_1 = a; \;\;\; D\xi_1 = \sigma^2$.
+
 Тогда $\forall x \in R \;\;\; P\left\{\frac{S_n - na}{\sqrt{DS_n}} < x\right\}
-\displaystyle\rightarrow_{n \to \infty} \frac{1}{\sqrt{2 \pi}} \in^x_{-\infty}
-e^{-\frac{n^2}{2}} du$. То есть $z_n = \frac{S_n - \mu S_n}{\sqrt{DS_n}}$ сходится
+\displaystyle\rightarrow_{n \to \infty} \frac{1}{\sqrt{2 \pi}} \int^x_{-\infty}
+e^{-\frac{n^2}{2}} du$. То есть $z_n = \frac{S_n - M S_n}{\sqrt{DS_n}}$ сходится
 по распределению с случаной величиной $z \sim N(0, 1)$.
 \bigskip
 
@@ -468,7 +471,7 @@ $$\forall \epsilon > 0 \;\;\; P\{|\overline{x} - a| < \epsilon\} \geq 1 -
 
 $$=\left|\text{н. о. р.} \;\;\; Dx_i = \sigma^2\right| =$$
 
-$$= 1 - \frac{1}{n^2}{\epsilon^2} D\xi = 1 - \frac{n \sigma^2}{n^2 \epsilon^2} =
+$$= 1 - \frac{1}{n^2\epsilon^2} \displaystyle\sum^n_{i = 1}D\xi = 1 - \frac{n \sigma^2}{n^2 \epsilon^2} =
 1 - \frac{\sigma^2}{n \epsilon^2} \rightarrow_{n \to \infty} 1 - 0$$
 
 Т.к. $P(A) \leq 1 \;\;\; \forall A$, то $\lim_{n \to \infty} P\{|\overline{x} - a| <
@@ -774,14 +777,15 @@ $L(\overline{X}_n, \theta) = \displaystyle\prod^n_{i = 1} f(X_i, \theta) = f(X_1
 \end{center}
 
 \subsection{Построение доверительных интервалов для параметра $a$ нормального
-распределения при известном и неизвестном $\sigma$}
+распределения при известном $\sigma$}
 
-\textbf{При известном $\sigma$:}
 \begin{center}
     \includegraphics[width=170mm]{2_5_5.png}
 \end{center}
 
-\textbf{При неизвестном $\sigma$:}
+\subsection{Построение доверительных интервалов для параметра $a$ нормального
+распределения при неизвестном $\sigma$}
+
 \begin{center}
     \includegraphics[width=170mm]{2_5_6.png}
 \end{center}
