@@ -561,20 +561,8 @@ $\overline{x} = \frac{1}{n} \sum^n_{i = 1} X_i$ является эффективной
 
 \subsection{Теорема о единственности эффективной оценки}
 
-\textbf{теорема:}
-\smallskip
-
-Пусть $X_1, \dots, X_n \sim L_{\xi}(x, \theta)$, где $\theta$~---
-параметр распределения, и пусть $\tilde{\theta}(\overline{X}_n)$ и
-$\widehat{\theta}_n(\overline{X}_n)$~--- две эффективные оценки $\theta$. Тогда
-$\tilde{\theta}_n(\overline{X}_n) = \widehat{\theta}_n(\overline{X}_n)$.
-То есть $P\{(x_1, \dots, x_n) : \tilde{\theta}_n(\overline{X}_n) \neq
-\widehat{\theta}_n(\overline{X}_n)\} = 0.$
-\bigskip
-
-Доказательство:
 \begin{center}
-    \includegraphics[width=170mm]{2_3_5.png}
+    \includegraphics[width=170mm]{2.png}
 \end{center}
 
 \subsubsection{Определение регулярной параметрической модели. Информация Фишера.}
@@ -704,6 +692,14 @@ $\tilde{\mu}_k = \frac{1}{n} \displaystyle\sum^n_{i = 1} (X_i - \overline{x})^k$
     \includegraphics[width=170mm]{2_4_1.png}
 \end{center}
 
+\textbf{Пример (нормальное распределение):}
+\smallskip
+
+\begin{center}
+    \includegraphics[width=170mm]{4_1_1.png}
+\end{center}
+
+
 \subsection{Функция правдоподобия. Метод максимального правдоподобия. Пример (биномиальное распределение)}
 
 \textbf{Определение:}
@@ -746,6 +742,13 @@ $L(\overline{X}_n, \theta) = \displaystyle\prod^n_{i = 1} f(X_i, \theta) = f(X_1
 
 \begin{center}
     \includegraphics[width=170mm]{2_4_2.png}
+\end{center}
+
+\textbf{Пример (нормальное распределение):}
+\smallskip
+
+\begin{center}
+    \includegraphics[width=170mm]{4_2_1.png}
 \end{center}
 
 \section{Доврительное оценивание}
@@ -798,6 +801,40 @@ $L(\overline{X}_n, \theta) = \displaystyle\prod^n_{i = 1} f(X_i, \theta) = f(X_1
 
 \begin{center}
     \includegraphics[width=170mm]{2_6_1.png}
+\end{center}
+
+\subsection{Критерий Неймана"=Пирсона}
+
+\begin{center}
+    \includegraphics[width=170mm]{6_2.png}
+\end{center}
+
+\subsection{Построение оптимального критерия Неймана"=Пирсона для параметра a
+нормального распределения для двух простых гипотез}
+
+\begin{center}
+    \includegraphics[width=170mm]{6.png}
+
+    \includegraphics[width=170mm]{66.png}
+\end{center}
+
+\subsection{Построение оптимального критерия Неймана"=Пирсона для двух простых
+гипотез для параметра показательного распределения}
+
+\subsection{Проверка сложных гипотез}
+
+\subsection{Проверка простой гипотезы $H_0$ против сложной гипотезы $H_1$}
+
+\subsection{Критерий согласия}
+
+\begin{center}
+    \includegraphics[width=170mm]{6_7.png}
+\end{center}
+
+\subsection{Критерий $\chi^2$ и критерий Колмогорова}
+
+\begin{center}
+    \includegraphics[width=170mm]{6_8.png}
 \end{center}
 
 \section{Регрессионный анализ}
